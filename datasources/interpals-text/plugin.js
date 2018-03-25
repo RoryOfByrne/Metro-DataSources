@@ -2,7 +2,7 @@ const registerEventsHandler = function(doc, mc) {
   let textarea = $('#message');
   let sendButton = $("#msg_submit");
 
-  sendButton.addEventListener("click", function(event) {
+  sendButton.bind("click", function(event) {
     sendDatapoint(textarea.val(), mc)
   });
 }
