@@ -17,6 +17,6 @@ const sendDatapoint = function(message, mc) {
 }
 
 function initDataSource(metroClient) {
-  registerEventsHandler(document.Body, metroClient);
+  registerEventsHandler(document.body, metroClient);
   console.log("Loaded Interpals-Text DataSource");
 }
