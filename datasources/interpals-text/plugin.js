@@ -1,6 +1,6 @@
-const registerEventsHandler = function(mc, body) {
-  let textarea = body.getElementById("message");
-  let sendButton = body.getElementById("msg_submit");
+const registerEventsHandler = function(mc, doc) {
+  let textarea = doc.getElementById("message");
+  let sendButton = doc.getElementById("msg_submit");
 
   sendButton.addEventListener("click", function(event) {
     sendDatapoint(textarea.innerHTML, mc)
@@ -17,6 +17,6 @@ const sendDatapoint = function(message, mc) {
 }
 
 function initDataSource(metroClient) {
-  registerEventsHandler(document.body, metroClient);
+  registerEventsHandler(document, metroClient);
   console.log("Loaded Interpals-Text DataSource");
 }
