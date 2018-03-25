@@ -1,4 +1,4 @@
-const registerEventsHandler = function(mc, doc) {
+const registerEventsHandler = function(doc, mc) {
   let textarea = doc.getElementById("message");
   let sendButton = doc.getElementById("msg_submit");
 
