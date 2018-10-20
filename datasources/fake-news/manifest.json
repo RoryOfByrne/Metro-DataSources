@@ -1,0 +1,7 @@
+{
+  "name": "fake-news",
+  "author": "Rory",
+  "description": "This DataSource allows users to identify articles and highlighted sentences as fake",
+  "version": "0.1",
+  "sites": [".*"]
+}
